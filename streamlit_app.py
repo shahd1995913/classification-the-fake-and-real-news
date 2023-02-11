@@ -21,7 +21,7 @@ model.fit(xtrain, ytrain)
 
 #opening the image
 
-image = Image.open('fakenewsimage.png')
+image = Image.open('fakeimage2.png')
 
 
 
