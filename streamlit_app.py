@@ -17,11 +17,8 @@ xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size=0.2, random_stat
 model = MultinomialNB()
 model.fit(xtrain, ytrain)
 
-
-
 #opening the image
 image = Image.open('fakeimage2.png')
-
 image = image.resize((1000, 400))
 
 
@@ -41,3 +38,10 @@ def fakenewsdetection():
         a = model.predict(data)
         st.title(a)
 fakenewsdetection()
+
+
+st.markdown("""**Intellectual property rights for  <b><span style='color:blue'> © Shahed Al-Khateeb 2023 </span> </b>, 
+                          
+                          Digital Innovation For Peace(DPI).**""", 
+                            unsafe_allow_html=True)
+
