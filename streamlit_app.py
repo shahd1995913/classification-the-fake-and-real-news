@@ -3,6 +3,9 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
+import streamlit as st
+from PIL import Image
+
 data = pd.read_csv("news.csv" , encoding= 'unicode_escape')
 
 x = np.array(data["title"])
@@ -15,7 +18,6 @@ model = MultinomialNB()
 model.fit(xtrain, ytrain)
 
 
-from PIL import Image
 
 #opening the image
 
@@ -28,10 +30,6 @@ image = Image.open('fakenewsimage.png')
 st.image(image, caption='Detect The Fake news')
 
 
-
-
-
-import streamlit as st
 st.title("Fake News Detection System")
 def fakenewsdetection():
     user = st.text_area("Enter Any News Headline: ")
