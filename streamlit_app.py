@@ -15,22 +15,17 @@ model = MultinomialNB()
 model.fit(xtrain, ytrain)
 
 
-
-
-#importing streamlit library
-
-
 from PIL import Image
 
 #opening the image
 
-image = Image.open('imagefile')
+image = Image.open('fakenewsimage.png')
 
 
 
 #displaying the image on streamlit app
 
-st.image(image, caption='Enter any caption here')
+st.image(image, caption='Detect The Fake news')
 
 
 
