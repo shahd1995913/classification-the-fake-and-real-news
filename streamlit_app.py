@@ -14,6 +14,28 @@ xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size=0.2, random_stat
 model = MultinomialNB()
 model.fit(xtrain, ytrain)
 
+
+
+
+#importing streamlit library
+
+
+from PIL import Image
+
+#opening the image
+
+image = Image.open('imagefile')
+
+
+
+#displaying the image on streamlit app
+
+st.image(image, caption='Enter any caption here')
+
+
+
+
+
 import streamlit as st
 st.title("Fake News Detection System")
 def fakenewsdetection():
