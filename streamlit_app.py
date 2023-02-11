@@ -38,8 +38,9 @@ def fakenewsdetection():
         a = model.predict(data)
         st.title(a)
 fakenewsdetection()
- st.markdown('##')
- st.markdown('##')
+
+st.markdown('##')
+st.markdown('##')
 
 st.markdown(""" **<b> Intellectual property rights for  <b><span style='color:blue'> © Shahed Al-Khateeb 2023 </span> </b> Digital Innovation For Peace(DPI).</b>**""", 
                             unsafe_allow_html=True)
