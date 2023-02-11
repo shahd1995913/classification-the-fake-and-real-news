@@ -27,7 +27,7 @@ image = image.resize((1000, 400))
 
 #displaying the image on streamlit app
 
-st.image(image, caption='Detect The Fake news')
+st.image(image, caption='Classification of Fake and True medical news using artificial intelligence ')
 
 
 st.title("Fake News Detection System")
