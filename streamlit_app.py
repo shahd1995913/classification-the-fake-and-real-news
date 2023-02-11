@@ -22,7 +22,7 @@ model.fit(xtrain, ytrain)
 #opening the image
 image = Image.open('fakeimage2.png')
 
-image = image.resize((350, 1000))
+image = image.resize((1000, 350))
 
 
 #displaying the image on streamlit app
