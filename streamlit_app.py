@@ -32,7 +32,7 @@ st.image(image, caption='Classification of Fake and True medical news using arti
 
 st.title("Fake News Detection System")
 def fakenewsdetection():
-    user = st.text_area("Enter Any News Headline: ")
+    user = st.text_area("Enter Any News Text ")
     if len(user) < 1:
         st.write("  ")
     else:
